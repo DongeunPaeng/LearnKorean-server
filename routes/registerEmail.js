@@ -16,7 +16,7 @@ router.post("/", (req, res, next) => {
   const {
     body: { email }
   } = req;
-  const sql = `insert into email (email, date, unsubscribe) values (?, now(), 0)`;
+  const sql = `insert into email (email, date, subscribe) values (?, now(), 1)`;
   let values = [email];
   connection.query(sql, [values], (err, data, fields) => {
     if(err) throw err;
