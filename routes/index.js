@@ -6,7 +6,7 @@ dotenv.config();
 
 /* GET home page. */
 router.get("/", function(req, res, next) {
-  res.send(process.env.DB_USER);
+  res.send('hello index.js');
 });
 
 module.exports = router;
