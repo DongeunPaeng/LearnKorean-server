@@ -31,16 +31,16 @@ app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, "build")));
 
+app.use("/registerEmail", registerEmail);
+app.use("/users", usersRouter);
+app.use("/", indexRouter);
+
 if (process.env.NODE_ENV === "production") {
   console.log("production!");
   app.get("/*", (req, res) => {
     res.sendFile(path.join(__dirname, "build", "index.html"));
   });
 }
-
-app.use("/registerEmail", registerEmail);
-app.use("/users", usersRouter);
-app.use("/", indexRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
