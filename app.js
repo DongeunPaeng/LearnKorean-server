@@ -18,12 +18,25 @@ app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
 
 app.use(helmet());
+app.use((req, res, next) => {
+  console.log('overriding...')
+  res.setHeader('Content-Security-Policy', "img-src 'self' https://images.unsplash.com data:")
+  return next();
+})
 app.use(cors());
 app.use(logger("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
+app.use(express.static(path.join(__dirname, "build")));
+
+if (process.env.NODE_ENV === "production") {
+  console.log("production!");
+  app.get("/*", (req, res) => {
+    res.sendFile(path.join(__dirname, "build", "index.html"));
+  });
+}
 
 app.use("/registerEmail", registerEmail);
 app.use("/users", usersRouter);
