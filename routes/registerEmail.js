@@ -12,6 +12,10 @@ const connection = mysql.createConnection({
   database: process.env.DB_NAME
 });
 
+router.get("/", (req, res, next) => {
+  res.send("Here it lives!");
+});
+
 router.post("/", (req, res, next) => {
   const {
     body: { email }
