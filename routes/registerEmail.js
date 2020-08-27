@@ -65,8 +65,6 @@ router.post("/", (req, res, next) => {
   ses.sendEmail(params, (err, data) => {
     if (err) {
       console.log(err.message);
-    } else {
-      console.log("Email sent! MessageID: ", data.MessageId);
     }
   });
 });
