@@ -226,7 +226,9 @@ router.post("/", (req, res, next) => {
                  1267.35,323.69 1267.35,668.62 1267.35,668.62 Z"
                           />
                         </svg>
-                        <p style="width: 100px; color: black; font-weight: 700;">
+                        <p
+                          style="width: 100px; color: black; font-size: 20px; font-weight: 700;"
+                        >
                           한글 공부
                         </p>
                       </div>
@@ -256,7 +258,7 @@ router.post("/", (req, res, next) => {
                   <td
                     align="center"
                     valign="top"
-                    style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 24px; font-weight: bold; line-height: 130%;
+                    style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 20px; font-weight: bold; line-height: 130%;
           padding-top: 25px;
           color: #000000;
           font-family: sans-serif;"
@@ -308,7 +310,7 @@ router.post("/", (req, res, next) => {
                   <td
                     align="center"
                     valign="top"
-                    style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 17px; font-weight: 400; line-height: 100%;
+                    style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 15px; font-weight: 400; line-height: 100%;
           padding-top: 25px;
           color: #000000;
           font-family: sans-serif;"
@@ -321,7 +323,7 @@ router.post("/", (req, res, next) => {
                   <td
                     align="center"
                     valign="top"
-                    style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 17px; font-weight: 400; line-height: 100%;
+                    style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 15px; font-weight: 400; line-height: 100%;
           padding-top: 25px;
           color: #000000;
           font-family: sans-serif;"
@@ -334,7 +336,7 @@ router.post("/", (req, res, next) => {
                   <td
                     align="center"
                     valign="top"
-                    style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 17px; font-weight: 400; line-height: 100%;
+                    style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 15px; font-weight: 400; line-height: 100%;
           padding-top: 25px;
           color: #000000;
           font-family: sans-serif;"
@@ -441,7 +443,7 @@ router.post("/", (req, res, next) => {
                         <td
                           align="left"
                           valign="top"
-                          style="font-size: 17px; font-weight: 400; line-height: 160%; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
+                          style="font-size: 15px; font-weight: 400; line-height: 160%; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
               padding-top: 25px; word-break: keep-all;
               color: #000000;
               font-family: sans-serif;"
@@ -481,7 +483,7 @@ router.post("/", (req, res, next) => {
                         <td
                           align="left"
                           valign="top"
-                          style="font-size: 17px; font-weight: 400; line-height: 160%; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
+                          style="font-size: 15px; font-weight: 400; line-height: 160%; border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;
               padding-top: 25px; word-break: keep-all;
               color: #000000;
               font-family: sans-serif;"
@@ -525,7 +527,7 @@ router.post("/", (req, res, next) => {
                   <td
                     align="center"
                     valign="top"
-                    style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 17px; font-weight: 400; line-height: 160%;
+                    style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 14px; font-weight: 400; line-height: 160%;
           padding-top: 20px;
           padding-bottom: 25px;
           color: #000000;
@@ -536,7 +538,7 @@ router.post("/", (req, res, next) => {
                     <a
                       href="mailto:service@learnkorean.cc"
                       target="_blank"
-                      style="color: #127DB3; font-family: sans-serif; font-size: 17px; font-weight: 400; line-height: 160%;"
+                      style="color: #127DB3; font-family: sans-serif; font-size: 14px; font-weight: 400; line-height: 160%;"
                       >service@learnkorean.cc</a
                     >
                   </td>
