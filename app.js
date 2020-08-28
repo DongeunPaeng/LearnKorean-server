@@ -28,6 +28,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
+app.use("/registerEmail", registerEmail);
+app.use("/users", usersRouter);
+
 app.use(express.static(path.join(__dirname, "build")));
 
 if (process.env.NODE_ENV === "production") {
@@ -36,10 +39,6 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.join(__dirname, "build", "index.html"));
   });
 }
-
-app.use("/registerEmail", registerEmail);
-app.use("/users", usersRouter);
-app.use("/", indexRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

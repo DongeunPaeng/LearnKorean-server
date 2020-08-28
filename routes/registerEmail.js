@@ -167,11 +167,8 @@ router.post("/", (req, res, next) => {
           color: #F0F0F0;"
                       class="preheader"
                     >
-                      Available on&nbsp;GitHub and&nbsp;CodePen. Highly compatible.
-                      Designer friendly. More than 50%&nbsp;of&nbsp;total email
-                      opens occurred on&nbsp;a&nbsp;mobile device&nbsp;—
-                      a&nbsp;mobile-friendly design is&nbsp;a&nbsp;must
-                      for&nbsp;email campaigns.
+                      하루에 한 번씩, 한글 실력 향상!
+                      아름다운 우리말, 한글을 배워보세요.
                     </div>
 
                     <!-- LOGO -->
@@ -184,7 +181,7 @@ router.post("/", (req, res, next) => {
                         border="0"
                         vspace="0"
                         hspace="0"
-                        src="https://www.dropbox.com/s/fu2bi7xlmhfmsgy/logo-black.svg?raw=1"
+                        src="https://learnkorean.cc/favicon.ico"
                         width="100"
                         height="30"
                         alt="Logo"
