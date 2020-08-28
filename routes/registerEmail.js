@@ -694,12 +694,11 @@ router.post("/", (req, res, next) => {
                     이 이메일은 '한글 공부'의 글귀 발송 서비스에 동의한 가입자게에만
                     발송되는 이메일입니다. 해지를 원하시면
                     <a
-                      href="https://github.com/konsav/email-templates/"
+                      href="https://learnkorean.cc"
                       target="_blank"
-                      style="color: #999999; font-family: sans-serif; font-size: 13px; font-weight: 400; line-height: 150%;"
+                      style="color: black; font-family: sans-serif; font-size: 13px; font-weight: 400; line-height: 150%;"
                       >구독 해지</a
-                    >
-                    를 눌러 즉시 구독을 해지해주세요.
+                    >를 눌러 즉시 구독을 해지해주세요.
 
                     <!-- ANALYTICS -->
                     <!-- http://www.google-analytics.com/collect?v=1&tid={{UA-Tracking-ID}}&cid={{Client-ID}}&t=event&ec=email&ea=open&cs={{Campaign-Source}}&cm=email&cn={{Campaign-Name}} -->
