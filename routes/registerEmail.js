@@ -12,17 +12,14 @@ const connection = mysql.createConnection({
   database: process.env.DB_NAME
 });
 
-router.get("/", (req, res, next) => {
-  res.send("Here it lives!");
-});
-
 router.post("/", (req, res, next) => {
   const {
-    body: { email }
+    body: { email, pro }
   } = req;
-  const sql = `insert into email (email, date, subscribe) values (?, now(), 1)`;
-  let values = [email];
-  connection.query(sql, [values], (err, data, fields) => {
+  console.log(email, pro);
+  const sql = `insert into email (email, date, subscribe, pro) values (?, now(), 1, ?)`;
+  const values = [email, pro];
+  connection.query(sql, values, (err, data, fields) => {
     if (err) throw err;
     res.json({
       status: 200,
@@ -494,6 +491,9 @@ router.post("/", (req, res, next) => {
                           살아갈 뿐이다. 한 사람의 인생에서 가장 고통스러운 순간 중
                           하나는 아마도 바라볼 시간보다 돌아볼 시간이 더 많다는
                           나이에 도달했다는 깨달음과 함께 찾아온다.
+                          <br />
+                          <br />
+                          프레드릭 배크만 - 오베라는 남자
                         </td>
                       </tr>
                     </table>
