@@ -219,3 +219,73 @@ overriding...
 [0mGET /manifest.json [36m304 [0m0.460 ms - -[0m
 overriding...
 [0mGET /service-worker.js [36m304 [0m0.530 ms - -[0m
+
+> api@0.0.0 start /home/ubuntu/LearnKorean/server
+> NODE_ENV=production node ./bin/www
+
+production!
+listening...
+[0mGET /sample.png [36m304 [0m4.262 ms - -[0m
+[0mGET /favicon.ico [32m200 [0m2.768 ms - 15086[0m
+[0mGET /manifest.json [36m304 [0m0.429 ms - -[0m
+[0mGET / [32m200 [0m0.982 ms - 1051[0m
+[0mGET /static/css/main.671759c4.css [32m200 [0m0.707 ms - 19532[0m
+[0mGET /static/js/main.ecf7dbd0.js [32m200 [0m0.645 ms - 242555[0m
+[0mGET /sample.png [32m200 [0m0.715 ms - 285364[0m
+[0mGET /favicon.ico [32m200 [0m0.667 ms - 15086[0m
+[0mGET /manifest.json [36m304 [0m0.416 ms - -[0m
+[0mGET /service-worker.js [36m304 [0m0.553 ms - -[0m
+[0mGET / [32m200 [0m1.156 ms - 1051[0m
+[0mGET /static/css/main.9f3a4986.css [32m200 [0m1.393 ms - 19529[0m
+[0mGET /static/js/main.dc88666b.js [32m200 [0m1.656 ms - 269078[0m
+[0mGET /sample.png [32m200 [0m0.718 ms - 285364[0m
+[0mGET /favicon.ico [32m200 [0m0.720 ms - 15086[0m
+[0mGET /manifest.json [32m200 [0m0.612 ms - 309[0m
+[0mGET /manifest.json [32m200 [0m0.686 ms - 309[0m
+[0mGET /sample.png [32m200 [0m0.679 ms - 285364[0m
+[0mGET /service-worker.js [32m200 [0m0.822 ms - 3164[0m
+[0mGET /index.html?_sw-precache=a80c3ba26f15c88209485a52be0bbd08 [32m200 [0m0.667 ms - 1051[0m
+[0mGET /static/css/main.9f3a4986.css [32m200 [0m1.531 ms - 19529[0m
+[0mGET /static/js/main.dc88666b.js [32m200 [0m0.585 ms - 269078[0m
+[0mGET /sample.png [36m304 [0m0.457 ms - -[0m
+[0mGET /manifest.json [36m304 [0m0.458 ms - -[0m
+[0mGET /favicon.ico [32m200 [0m0.699 ms - 15086[0m
+[0mGET /service-worker.js [36m304 [0m0.455 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.499 ms - -[0m
+[0mGET /manifest.json [36m304 [0m0.454 ms - -[0m
+[0mGET /favicon.ico [32m200 [0m0.654 ms - 15086[0m
+[0mGET /service-worker.js [36m304 [0m0.437 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.437 ms - -[0m
+[0mGET /premium [32m200 [0m2.113 ms - 1051[0m
+[0mGET /static/css/main.9f3a4986.css [32m200 [0m1.488 ms - 19529[0m
+[0mGET /static/js/main.dc88666b.js [32m200 [0m1.535 ms - 269078[0m
+[0mGET /favicon.ico [32m200 [0m0.674 ms - 15086[0m
+[0mGET /manifest.json [36m304 [0m0.421 ms - -[0m
+[0mGET /favicon.ico [32m200 [0m0.679 ms - 15086[0m
+[0mGET /manifest.json [36m304 [0m0.478 ms - -[0m
+[0mGET /service-worker.js [32m200 [0m0.685 ms - 3164[0m
+[0mGET /static/css/main.9f3a4986.css [36m304 [0m0.431 ms - -[0m
+[0mGET /index.html?_sw-precache=a80c3ba26f15c88209485a52be0bbd08 [32m200 [0m2.727 ms - 1051[0m
+[0mGET /static/js/main.dc88666b.js [36m304 [0m0.371 ms - -[0m
+[0mGET /premium [32m200 [0m0.933 ms - 1051[0m
+[0mGET /static/css/main.9f3a4986.css [32m200 [0m1.294 ms - 19529[0m
+[0mGET /static/js/main.dc88666b.js [32m200 [0m1.618 ms - 269078[0m
+[0mGET /manifest.json [36m304 [0m0.571 ms - -[0m
+[0mGET /favicon.ico [32m200 [0m1.808 ms - 15086[0m
+[0mGET /favicon.ico [32m200 [0m0.623 ms - 15086[0m
+[0mGET /manifest.json [36m304 [0m0.380 ms - -[0m
+[0mGET /manifest.json [36m304 [0m0.561 ms - -[0m
+[0mGET /favicon.ico [32m200 [0m2.766 ms - 15086[0m
+[0mGET /service-worker.js [36m304 [0m0.445 ms - -[0m
+[0mGET /premium [32m200 [0m0.863 ms - 1051[0m
+[0mGET /static/css/main.9f3a4986.css [32m200 [0m0.656 ms - 19529[0m
+[0mGET /static/js/main.d399cb43.js [32m200 [0m0.536 ms - 269112[0m
+[0mGET /manifest.json [32m200 [0m1.330 ms - 309[0m
+[0mGET /favicon.ico [32m200 [0m1.543 ms - 15086[0m
+[0mGET /manifest.json [36m304 [0m0.439 ms - -[0m
+[0mGET /service-worker.js [32m200 [0m0.674 ms - 3164[0m
+[0mGET /index.html?_sw-precache=4d5e1e076738299cd64e685c81611c97 [32m200 [0m2.531 ms - 1051[0m
+[0mGET /static/js/main.d399cb43.js [36m304 [0m2.228 ms - -[0m
+[0mGET /favicon.ico [32m200 [0m0.642 ms - 15086[0m
+[0mGET / [32m200 [0m0.648 ms - 1051[0m
+[0mPOST /registerEmail [32m200 [0m77.189 ms - 47[0m
