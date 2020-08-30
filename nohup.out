@@ -289,3 +289,57 @@ listening...
 [0mGET /favicon.ico [32m200 [0m0.642 ms - 15086[0m
 [0mGET / [32m200 [0m0.648 ms - 1051[0m
 [0mPOST /registerEmail [32m200 [0m77.189 ms - 47[0m
+
+> api@0.0.0 start /home/ubuntu/LearnKorean/server
+> NODE_ENV=production node ./bin/www
+
+production!
+listening to port  9000
+[0mGET /users [32m200 [0m3.421 ms - 23[0m
+[0mGET /users [32m200 [0m0.640 ms - 23[0m
+[0mGET /sample.png [32m200 [0m4.747 ms - 285364[0m
+[0mGET / [32m200 [0m1.205 ms - 1251[0m
+[0mGET /static/css/main.c7e10c55.css [32m200 [0m0.713 ms - 19645[0m
+[0mGET /static/js/main.55c71043.js [32m200 [0m0.765 ms - 266769[0m
+[0mGET /service-worker.js [32m200 [0m0.834 ms - 3164[0m
+[0mGET /sample.png [32m200 [0m0.693 ms - 285364[0m
+[0mGET / [32m200 [0m0.725 ms - 1251[0m
+[0mGET /static/css/main.c7e10c55.css [32m200 [0m0.725 ms - 19645[0m
+[0mGET /static/js/main.55c71043.js [32m200 [0m0.589 ms - 266769[0m
+[0mGET /sample.png [32m200 [0m1.566 ms - 285364[0m
+[0mGET /sample.png [36m304 [0m0.738 ms - -[0m
+[0mGET / [32m200 [0m0.687 ms - 1251[0m
+[0mGET /static/css/main.c7e10c55.css [32m200 [0m1.406 ms - 19645[0m
+[0mGET /static/js/main.55c71043.js [32m200 [0m1.782 ms - 266769[0m
+[0mGET /sample.png [32m200 [0m0.658 ms - 285364[0m
+[0mGET /service-worker.js [36m304 [0m0.587 ms - -[0m
+[0mGET /service-worker.js [36m304 [0m0.467 ms - -[0m
+[0mGET /service-worker.js [36m304 [0m0.482 ms - -[0m
+[0mGET /users [32m200 [0m0.396 ms - 23[0m
+[0mGET /service-worker.js [36m304 [0m0.507 ms - -[0m
+[0mGET /users [32m200 [0m0.361 ms - 23[0m
+[0mGET /service-worker.js [36m304 [0m0.463 ms - -[0m
+[0mGET /service-worker.js [36m304 [0m0.487 ms - -[0m
+[0mGET /service-worker.js [36m304 [0m0.481 ms - -[0m
+[0mGET /service-worker.js [36m304 [0m0.486 ms - -[0m
+[0mGET /service-worker.js [36m304 [0m0.454 ms - -[0m
+[0mGET /service-worker.js [36m304 [0m0.460 ms - -[0m
+get!
+undefined
+[0mGET /service-worker.js [36m304 [0m0.458 ms - -[0m
+[0mGET /unsubscribe [0m- [0m- ms - -[0m
+
+> api@0.0.0 start /home/ubuntu/LearnKorean/server
+> NODE_ENV=production node ./bin/www
+
+listening to port  9000
+[0mGET / [32m200 [0m6.040 ms - 1251[0m
+[0mGET /static/css/main.c7e10c55.css [32m200 [0m1.304 ms - 19645[0m
+[0mGET /static/js/main.55c71043.js [32m200 [0m0.703 ms - 266769[0m
+[0mGET /sample.png [32m200 [0m0.784 ms - 285364[0m
+[0mGET /service-worker.js [36m304 [0m1.170 ms - -[0m
+[0mGET /users [32m200 [0m2.323 ms - 23[0m
+[0mGET /service-worker.js [36m304 [0m0.589 ms - -[0m
+[0mGET /service-worker.js [36m304 [0m0.471 ms - -[0m
+[0mGET /users [32m200 [0m0.456 ms - 23[0m
+[0mGET /service-worker.js [36m304 [0m0.455 ms - -[0m

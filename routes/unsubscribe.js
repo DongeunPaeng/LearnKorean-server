@@ -3,9 +3,10 @@ const router = express.Router();
 
 /* GET unsubscribe page. */
 router.get("/", function(req, res, next) {
-  const {
-    query: { email }
-  } = req;
+//   const {
+//     query: { email }
+//   } = req;
+  console.log('hello, this request worked!!');
   console.log(email);
 });
 

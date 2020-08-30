@@ -28,14 +28,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-app.use("/registerEmail", registerEmail);
-app.use("/users", usersRouter);
-app.use("/unsubscribe", unsubscribe);
+app.use("/api/registerEmail", registerEmail);
+app.use("/api/users", usersRouter);
+app.use("/api/unsubscribe", unsubscribe);
 
 app.use(express.static(path.join(__dirname, "build")));
 
 if (process.env.NODE_ENV === "production") {
-  console.log("production!");
   app.get("/*", (req, res) => {
     res.sendFile(path.join(__dirname, "build", "index.html"));
   });
