@@ -16,15 +16,26 @@ router.post("/", (req, res, next) => {
   const {
     body: { email, pro }
   } = req;
-  const sql = `insert into email (email, date, subscribe, pro) values (?, now(), 1, ?)`;
-  const values = [email, pro];
-  connection.query(sql, values, (err, data, fields) => {
+
+  // register Email ID
+  const findEmail = `select * from email where email = ?`;
+  connection.query(findEmail, email, (err, data, fields) => {
     if (err) throw err;
+    if (!!data[0]) {
+      console.log("duplicate");
+    } else {
+      const sql = `insert into email (email, date, subscribe, pro) values (?, now(), 1, ?)`;
+      const values = [email, pro];
+      connection.query(sql, values, (err, data, fields) => {
+        if (err) throw err;
+      });
+    }
     res.json({
       status: 200,
       message: "New email registred."
     });
   });
+
   // send eamil via AWS SES
   const sender = "Learn Korean<service@learnkorean.cc>";
   const recipient = email;
