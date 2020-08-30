@@ -4,11 +4,6 @@ const mysql = require("mysql");
 const AWS = require("aws-sdk");
 const router = express.Router();
 
-// delete later...
-const dotenv = require("dotenv");
-dotenv.config();
-// ...until this line
-
 AWS.config.update({ region: "ap-northeast-2" });
 
 const connection = mysql.createConnection({
@@ -43,7 +38,7 @@ router.post("/", (req, res, next) => {
       });
       axios
         .post(
-          "https://hooks.slack.com/services/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",
+          "https://hooks.slack.com/services/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",
           {
             text: `New subscription from ${email}`
           }
