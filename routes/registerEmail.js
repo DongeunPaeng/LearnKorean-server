@@ -275,6 +275,19 @@ router.post("/", (req, res, next) => {
           font-family: sans-serif;"
                     class="subheader"
                   >
+                    <span style="color: #007AFF">${email}</span>님,
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    align="center"
+                    valign="top"
+                    style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-bottom: 3px; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 18px; font-weight: 300; line-height: 150%;
+          padding-top: 5px;
+          color: #000000;
+          font-family: sans-serif;"
+                    class="subheader"
+                  >
                     아름다운 우리말, 한글을 배워보세요.
                   </td>
                 </tr>
@@ -354,7 +367,7 @@ router.post("/", (req, res, next) => {
           padding-bottom: 5px;"
                     class="button"
                   >
-                    <a href="https://learnkorean.cc" target="_blank">
+                    <a href="https://learnkorean.cc/premium" target="_blank">
                       <table
                         border="0"
                         cellpadding="0"
@@ -367,12 +380,12 @@ router.post("/", (req, res, next) => {
                             align="center"
                             valign="middle"
                             style="padding: 12px 24px; margin: 0; border-collapse: collapse; border-spacing: 0; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px;"
-                            bgcolor="#E9703E"
+                            bgcolor="#007AFF"
                           >
                             <a
                               target="_blank"
                               style="color: #FFFFFF; font-family: sans-serif; font-size: 17px; font-weight: 400; line-height: 120%;"
-                              href="https://learnkorean.cc"
+                              href="https://learnkorean.cc/premium"
                               >PRO 시작하기
                             </a>
                           </td>
@@ -694,26 +707,14 @@ router.post("/", (req, res, next) => {
                     이 이메일은 '한글 공부'의 글귀 발송 서비스에 동의한 가입자게에만
                     발송되는 이메일입니다. 해지를 원하시면
                     <a
-                      href="https://learnkorean.cc"
+                      href="https://learnkorean.cc/unsubscribe?email=${email}"
                       target="_blank"
                       style="color: black; font-family: sans-serif; font-size: 13px; font-weight: 400; line-height: 150%;"
                       >구독 해지</a
                     >를 눌러 즉시 구독을 해지해주세요.
-
-                    <!-- ANALYTICS -->
-                    <!-- http://www.google-analytics.com/collect?v=1&tid={{UA-Tracking-ID}}&cid={{Client-ID}}&t=event&ec=email&ea=open&cs={{Campaign-Source}}&cm=email&cn={{Campaign-Name}} -->
-                    <img
-                      width="1"
-                      height="1"
-                      border="0"
-                      vspace="0"
-                      hspace="0"
-                      style="margin: 0; padding: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;"
-                      src="https://raw.githubusercontent.com/konsav/email-templates/master/images/tracker.png"
-                    />
+                    <p>&#0169; 2020 LearnKorean. All rights reserved.</p>
                   </td>
                 </tr>
-
                 <!-- End of WRAPPER -->
               </table>
 

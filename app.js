@@ -7,9 +7,9 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const helmet = require("helmet");
 
-const indexRouter = require("./routes/index");
 const registerEmail = require("./routes/registerEmail");
 const usersRouter = require("./routes/users");
+const unsubscribe = require("./routes/unsubscribe");
 
 const app = express();
 
@@ -30,6 +30,7 @@ app.use(cookieParser());
 
 app.use("/registerEmail", registerEmail);
 app.use("/users", usersRouter);
+app.use("/unsubscribe", unsubscribe);
 
 app.use(express.static(path.join(__dirname, "build")));
 
