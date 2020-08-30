@@ -7,7 +7,7 @@ router.get("/", function(req, res, next) {
     query: { email }
   } = req;
   console.log(email, ' has been opted out');
-  res.redirect('https://learnkorean.cc/premium');
+  res.redirect('https://learnkorean.cc/bye');
 });
 
 module.exports = router;
