@@ -1,7 +1,13 @@
 const express = require("express");
+const axios = require("axios");
 const mysql = require("mysql");
 const AWS = require("aws-sdk");
 const router = express.Router();
+
+// delete later...
+const dotenv = require("dotenv");
+dotenv.config();
+// ...until this line
 
 AWS.config.update({ region: "ap-northeast-2" });
 
@@ -23,17 +29,28 @@ router.post("/", (req, res, next) => {
     if (err) throw err;
     if (!!data[0]) {
       console.log("duplicate");
+      res.end();
     } else {
       const sql = `insert into email (email, date, subscribe, pro) values (?, now(), 1, ?)`;
       const values = [email, pro];
       connection.query(sql, values, (err, data, fields) => {
         if (err) throw err;
+        res.end();
       });
+      res.json({
+        status: 200,
+        message: "New email registred."
+      });
+      axios
+        .post(
+          "https://hooks.slack.com/services/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",
+          {
+            text: `New subscription from ${email}`
+          }
+        )
+        .then(() => console.log("ok"))
+        .catch(err => console.log(err));
     }
-    res.json({
-      status: 200,
-      message: "New email registred."
-    });
   });
 
   // send eamil via AWS SES
