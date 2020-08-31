@@ -19,9 +19,12 @@ app.set("views", path.join(__dirname, "views"));
 
 app.use(helmet());
 app.use((req, res, next) => {
-res.setHeader('Content-Security-Policy', "img-src 'self' https://images.unsplash.com data:")
- return next();
-})
+  res.setHeader(
+    "Content-Security-Policy",
+    "img-src 'self' https://images.unsplash.com data:"
+  );
+  return next();
+});
 app.use(cors());
 app.use(logger("dev"));
 app.use(bodyParser.json());
