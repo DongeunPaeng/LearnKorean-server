@@ -3,6 +3,9 @@ const axios = require("axios");
 const mysql = require("mysql");
 const AWS = require("aws-sdk");
 const router = express.Router();
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 AWS.config.update({ region: "ap-northeast-2" });
 
@@ -63,7 +66,7 @@ router.post("/", (req, res, next) => {
 
       axios
         .post(
-          "https://hooks.slack.com/services/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",
+          process.env.SLACK_HOOK_URL,
           {
             text: `New subscription from ${email}`
           }
