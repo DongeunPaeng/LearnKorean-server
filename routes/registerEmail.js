@@ -6,12 +6,34 @@ const router = express.Router();
 
 AWS.config.update({ region: "ap-northeast-2" });
 
-const connection = mysql.createConnection({
+let connection;
+
+const handleDisconnect = () => {
+
+connection = mysql.createConnection({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME
 });
+
+  connection.connect(err => {
+    if(err){
+      console.log('error when connecting to db:', err);
+      setTimeout(handleDisconnect, 2000);
+    }
+  });
+
+connection.on('error', err => {
+  console.log('db error', err);
+  ir(err.code === "PROTOCOL_CONNECTION_LOST"){
+    handleDisconnect();
+  } else {
+    throw err;
+  }
+});
+
+handleDisconnect();
 
 router.post("/", (req, res, next) => {
   // parse body
@@ -51,7 +73,6 @@ router.post("/", (req, res, next) => {
     }
   });
 
-  connection.end(err => console.log(err));
 
   // send eamil via AWS SES
   const sender = "Learn Korean<service@learnkorean.cc>";
