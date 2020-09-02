@@ -8,6 +8,7 @@ const bodyParser = require("body-parser");
 const helmet = require("helmet");
 
 const registerEmail = require("./routes/registerEmail");
+const registerPost = require("./routes/registerPost");
 const usersRouter = require("./routes/users");
 const unsubscribe = require("./routes/unsubscribe");
 
@@ -32,6 +33,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 app.use("/api/registerEmail", registerEmail);
+app.use("/api/registerPost", registerPost);
 app.use("/api/users", usersRouter);
 app.use("/api/unsubscribe", unsubscribe);
 

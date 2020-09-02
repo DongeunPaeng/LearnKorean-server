@@ -14,12 +14,14 @@ const connection = mysql.createConnection({
 });
 
 router.post("/", (req, res, next) => {
+  // parse body
   const {
     body: { email, pro }
   } = req;
 
-  // register Email ID
+  // register email id
   const findEmail = `select * from email where email = ?`;
+
   connection.query(findEmail, email, (err, data, fields) => {
     if (err) throw err;
     if (!!data[0]) {
@@ -36,6 +38,7 @@ router.post("/", (req, res, next) => {
         status: 200,
         message: "New email registred."
       });
+
       axios
         .post(
           "https://hooks.slack.com/services/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",
@@ -726,7 +729,7 @@ router.post("/", (req, res, next) => {
           font-family: sans-serif; word-break: keep-all;"
                     class="footer"
                   >
-                    이 이메일은 '한글 공부'의 글귀 발송 서비스에 동의한 가입자게에만
+                    이 이메일은 '한글 공부'의 글귀 발송 서비스에 동의한 가입자에게만
                     발송되는 이메일입니다. 해지를 원하시면
                     <a
                       href="https://learnkorean.cc/api/unsubscribe?email=${email}"
