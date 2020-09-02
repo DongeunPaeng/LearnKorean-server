@@ -41,7 +41,7 @@ router.post("/", (req, res, next) => {
 
       axios
         .post(
-          "https://hooks.slack.com/services/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",
+          "https://hooks.slack.com/services/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",
           {
             text: `New subscription from ${email}`
           }
