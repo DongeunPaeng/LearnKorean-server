@@ -9,29 +9,29 @@ AWS.config.update({ region: "ap-northeast-2" });
 let connection;
 
 const handleDisconnect = () => {
-
-connection = mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME
-});
+  connection = mysql.createConnection({
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME
+  });
 
   connection.connect(err => {
-    if(err){
-      console.log('error when connecting to db:', err);
+    if (err) {
+      console.log("error when connecting to db:", err);
       setTimeout(handleDisconnect, 2000);
     }
   });
 
-connection.on('error', err => {
-  console.log('db error', err);
-  ir(err.code === "PROTOCOL_CONNECTION_LOST"){
-    handleDisconnect();
-  } else {
-    throw err;
-  }
-});
+  connection.on("error", err => {
+    console.log("db error", err);
+    if (err.code === "PROTOCOL_CONNECTION_LOST") {
+      handleDisconnect();
+    } else {
+      throw err;
+    }
+  });
+};
 
 handleDisconnect();
 
@@ -72,7 +72,6 @@ router.post("/", (req, res, next) => {
         .catch(err => console.log(err));
     }
   });
-
 
   // send eamil via AWS SES
   const sender = "Learn Korean<service@learnkorean.cc>";
