@@ -25,7 +25,7 @@ router.get("/", (req, res, next) => {
     retrievedPost = data[0];
     res.status(200).send(data[0].post);
 
-    connection.end(err => console.log(err.stack));
+    connection.end(err => console.log(err));
 
     const sender = "Test<service@learnkorean.cc>";
     const recipient = "dylan.paeng@deering.co";
