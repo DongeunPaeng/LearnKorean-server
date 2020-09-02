@@ -86,7 +86,7 @@ router.post("/", (req, res, next) => {
       message: "New post registred."
     });
   });
-  connection.end(err => console.log(err.stack));
+  connection.end(err => console.log(err));
 });
 
 module.exports = router;
