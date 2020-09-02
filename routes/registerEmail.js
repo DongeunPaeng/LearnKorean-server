@@ -76,7 +76,7 @@ router.post("/", (req, res, next) => {
   // send eamil via AWS SES
   const sender = "Learn Korean<service@learnkorean.cc>";
   const recipient = email;
-  const subject = "한글 공부에서 글귀가 도착하였습니다.";
+  const subject = "한글 공부에서 첫 번째 글귀가 도착하였습니다.";
   const body_html = `
     <html xmlns="http://www.w3.org/1999/xhtml">
       <head>
