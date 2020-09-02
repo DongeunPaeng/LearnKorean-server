@@ -25,6 +25,8 @@ router.get("/", (req, res, next) => {
     retrievedPost = data[0];
     res.status(200).send(data[0].post);
 
+    connection.end(err => console.log(err.stack));
+
     const sender = "Test<service@learnkorean.cc>";
     const recipient = "dylan.paeng@deering.co";
     const subject = "test";
@@ -84,6 +86,7 @@ router.post("/", (req, res, next) => {
       message: "New post registred."
     });
   });
+  connection.end(err => console.log(err.stack));
 });
 
 module.exports = router;

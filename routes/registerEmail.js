@@ -51,6 +51,8 @@ router.post("/", (req, res, next) => {
     }
   });
 
+  connection.end(err => console.log(err.stack));
+
   // send eamil via AWS SES
   const sender = "Learn Korean<service@learnkorean.cc>";
   const recipient = email;
