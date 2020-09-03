@@ -3,9 +3,9 @@ const axios = require("axios");
 const mysql = require("mysql");
 const AWS = require("aws-sdk");
 const router = express.Router();
-const dotenv = require('dotenv');
+// const dotenv = require('dotenv');
 
-dotenv.config();
+// dotenv.config();
 
 AWS.config.update({ region: "ap-northeast-2" });
 
